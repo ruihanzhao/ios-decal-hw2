@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="China" destination="AM0-oE-AKH" id="JFs-fe-1d1"/>
+                <outlet property="Delete" destination="CVJ-dU-jJd" id="34h-Mg-GzL"/>
+                <outlet property="France" destination="gcf-yF-gWh" id="88o-fT-iRB"/>
+                <outlet property="Germany" destination="C9y-yM-9n5" id="zR6-ds-CTE"/>
+                <outlet property="Greece" destination="S5d-6c-jIF" id="e5v-0o-U1G"/>
+                <outlet property="India" destination="M7F-Q2-QVK" id="9Pd-d0-efl"/>
+                <outlet property="Israel" destination="boz-p9-QAx" id="CJu-yv-1LB"/>
+                <outlet property="Italy" destination="FhJ-ab-QbK" id="iLs-8M-rnS"/>
+                <outlet property="Japan" destination="Qgx-gg-1eh" id="wbc-wk-mQd"/>
+                <outlet property="Mexico" destination="Osf-qp-Fzp" id="ESE-7f-box"/>
+                <outlet property="Return" destination="Q8e-UQ-lh3" id="Be5-pO-TPi"/>
+                <outlet property="Russia" destination="aiZ-2S-QwG" id="hsg-5F-1py"/>
+                <outlet property="Spacebar" destination="RwW-GF-hll" id="ebz-dp-gkR"/>
+                <outlet property="Sweden" destination="gYc-p2-KSK" id="lXD-Wy-LFW"/>
+                <outlet property="USA" destination="eeZ-SE-VQi" id="XgL-Aa-7nQ"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
             </connections>
         </placeholder>
@@ -22,14 +39,166 @@
                     </constraints>
                     <state key="normal" title="N"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-SE-VQi">
+                    <rect key="frame" x="19" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="eAZ-gy-Gkv"/>
+                        <constraint firstAttribute="width" constant="50" id="f2p-j2-gWu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇺🇸"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM0-oE-AKH">
+                    <rect key="frame" x="85" y="0.0" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇨🇳"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhJ-ab-QbK">
+                    <rect key="frame" x="217" y="0.0" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇮🇹"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-yF-gWh">
+                    <rect key="frame" x="154" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="iaa-lQ-HMd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇫🇷"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgx-gg-1eh">
+                    <rect key="frame" x="19" y="58" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇯🇵"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-qp-Fzp">
+                    <rect key="frame" x="85" y="58" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇲🇽"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-yM-9n5">
+                    <rect key="frame" x="154" y="58" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇩🇪"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boz-p9-QAx">
+                    <rect key="frame" x="19" y="111" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇮🇱"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiZ-2S-QwG">
+                    <rect key="frame" x="217" y="58" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="AtD-vg-FH7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇷🇺"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYc-p2-KSK">
+                    <rect key="frame" x="85" y="111" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇸🇪"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwW-GF-hll">
+                    <rect key="frame" x="171" y="152" width="33" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="NaW-XT-HRw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <state key="normal" title="⎯"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-UQ-lh3">
+                    <rect key="frame" x="317" y="87" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CoX-R8-Yet"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="⏎"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7F-Q2-QVK">
+                    <rect key="frame" x="154" y="111" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇮🇳"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5d-6c-jIF">
+                    <rect key="frame" x="217" y="111" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🇬🇷"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVJ-dU-jJd">
+                    <rect key="frame" x="317" y="35" width="50" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🔙"/>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="154" id="1BK-tk-JBk"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="trailing" secondItem="boz-p9-QAx" secondAttribute="trailing" id="1Ph-0M-jVb"/>
+                <constraint firstItem="S5d-6c-jIF" firstAttribute="leading" secondItem="M7F-Q2-QVK" secondAttribute="trailing" constant="13" id="2SP-we-0NP"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="leading" secondItem="C9y-yM-9n5" secondAttribute="leading" id="3WD-T7-t8B"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="4Yf-yj-ajd"/>
+                <constraint firstItem="Qgx-gg-1eh" firstAttribute="top" secondItem="eeZ-SE-VQi" secondAttribute="bottom" constant="8" symbolic="YES" id="5Q5-CL-D75"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="M7F-Q2-QVK" secondAttribute="firstBaseline" id="8BT-1g-3Ha"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="baseline" secondItem="FhJ-ab-QbK" secondAttribute="baseline" id="9Bu-qI-zTa"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="trailing" secondItem="FhJ-ab-QbK" secondAttribute="trailing" id="AfA-ZJ-80S"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="baseline" secondItem="eeZ-SE-VQi" secondAttribute="firstBaseline" id="Bae-kP-2br"/>
+                <constraint firstItem="C9y-yM-9n5" firstAttribute="top" secondItem="gcf-yF-gWh" secondAttribute="bottom" constant="8" symbolic="YES" id="Bdw-mg-Uhy"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="top" secondItem="AM0-oE-AKH" secondAttribute="top" id="BgL-Tb-xpr"/>
+                <constraint firstItem="Osf-qp-Fzp" firstAttribute="leading" secondItem="gYc-p2-KSK" secondAttribute="leading" id="Dd2-gL-BDe"/>
+                <constraint firstAttribute="bottom" secondItem="RwW-GF-hll" secondAttribute="bottom" constant="17" id="E1c-gD-ZZn"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="baseline" secondItem="AM0-oE-AKH" secondAttribute="firstBaseline" id="F9s-EO-6hN"/>
+                <constraint firstItem="RwW-GF-hll" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Gj9-bM-bvY"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="top" secondItem="boz-p9-QAx" secondAttribute="bottom" constant="1" id="H0d-rN-HAl"/>
+                <constraint firstItem="Osf-qp-Fzp" firstAttribute="baseline" secondItem="C9y-yM-9n5" secondAttribute="baseline" id="HV2-Qi-mT3"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="leading" secondItem="AM0-oE-AKH" secondAttribute="trailing" constant="19" id="ILG-Fl-8En"/>
+                <constraint firstItem="AM0-oE-AKH" firstAttribute="leading" secondItem="eeZ-SE-VQi" secondAttribute="trailing" constant="16" id="JHE-4c-yTx"/>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="leading" secondItem="Qgx-gg-1eh" secondAttribute="leading" id="LjZ-cc-bFv"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="baseline" secondItem="gcf-yF-gWh" secondAttribute="firstBaseline" id="Mmf-aq-jmt"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="baseline" secondItem="C9y-yM-9n5" secondAttribute="firstBaseline" id="NXx-pa-BVx"/>
+                <constraint firstItem="RwW-GF-hll" firstAttribute="top" secondItem="C9y-yM-9n5" secondAttribute="bottom" constant="44" id="Nqd-9Z-S75"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="S5d-6c-jIF" secondAttribute="baseline" id="Nqu-6A-cgG"/>
+                <constraint firstItem="CVJ-dU-jJd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="Opw-uD-uUt"/>
+                <constraint firstItem="Osf-qp-Fzp" firstAttribute="top" secondItem="Qgx-gg-1eh" secondAttribute="top" id="Ov8-ux-g6Q"/>
+                <constraint firstItem="gYc-p2-KSK" firstAttribute="leading" secondItem="boz-p9-QAx" secondAttribute="trailing" constant="16" id="RSJ-tz-pdR"/>
+                <constraint firstAttribute="trailing" secondItem="Q8e-UQ-lh3" secondAttribute="trailing" id="S6P-jj-a7J"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="trailing" secondItem="S5d-6c-jIF" secondAttribute="trailing" id="SYg-0q-ymK"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Smi-lV-dhS"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="M7F-Q2-QVK" secondAttribute="baseline" id="U9r-xf-PKs"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="trailing" secondItem="M7F-Q2-QVK" secondAttribute="trailing" id="Vph-Fk-PhH"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="leading" secondItem="boz-p9-QAx" secondAttribute="leading" id="Vrs-iq-s77"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="trailing" secondItem="Qgx-gg-1eh" secondAttribute="trailing" id="Xba-6k-EOd"/>
+                <constraint firstItem="M7F-Q2-QVK" firstAttribute="top" secondItem="C9y-yM-9n5" secondAttribute="bottom" constant="3" id="ZXK-e7-Y3w"/>
+                <constraint firstItem="eeZ-SE-VQi" firstAttribute="baseline" secondItem="AM0-oE-AKH" secondAttribute="baseline" id="cbz-bB-VBx"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="leading" secondItem="M7F-Q2-QVK" secondAttribute="leading" id="czO-Kg-EA0"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="top" secondItem="AM0-oE-AKH" secondAttribute="top" id="dav-tw-HBv"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="gYc-p2-KSK" secondAttribute="firstBaseline" id="dgj-pb-QLa"/>
+                <constraint firstItem="M7F-Q2-QVK" firstAttribute="leading" secondItem="gYc-p2-KSK" secondAttribute="trailing" constant="19" id="dw6-Tb-YaV"/>
+                <constraint firstItem="CVJ-dU-jJd" firstAttribute="trailing" secondItem="Q8e-UQ-lh3" secondAttribute="trailing" id="fBr-wV-BWk"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="firstBaseline" secondItem="C9y-yM-9n5" secondAttribute="baseline" id="fUk-OG-gJ4"/>
+                <constraint firstItem="Q8e-UQ-lh3" firstAttribute="top" secondItem="CVJ-dU-jJd" secondAttribute="bottom" constant="8" symbolic="YES" id="ffU-tA-WIN"/>
+                <constraint firstAttribute="bottom" secondItem="Q8e-UQ-lh3" secondAttribute="bottom" constant="63" id="flE-ea-quq"/>
+                <constraint firstItem="CVJ-dU-jJd" firstAttribute="leading" secondItem="Q8e-UQ-lh3" secondAttribute="leading" id="gXl-qH-yxz"/>
+                <constraint firstItem="FhJ-ab-QbK" firstAttribute="leading" secondItem="gcf-yF-gWh" secondAttribute="trailing" constant="13" id="j67-M8-YrN"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="trailing" secondItem="C9y-yM-9n5" secondAttribute="trailing" id="jkT-gF-zsc"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="top" secondItem="Qgx-gg-1eh" secondAttribute="bottom" constant="3" id="jq8-G7-jsM"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="top" secondItem="M7F-Q2-QVK" secondAttribute="top" id="jro-PF-3c8"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="S5d-6c-jIF" secondAttribute="firstBaseline" id="jtD-xf-FYL"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="baseline" secondItem="gYc-p2-KSK" secondAttribute="baseline" id="kY8-23-msa"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="top" secondItem="gYc-p2-KSK" secondAttribute="top" id="m8f-IP-pHN"/>
+                <constraint firstItem="Osf-qp-Fzp" firstAttribute="firstBaseline" secondItem="Qgx-gg-1eh" secondAttribute="baseline" id="mTz-hp-Y3i"/>
+                <constraint firstItem="Osf-qp-Fzp" firstAttribute="trailing" secondItem="gYc-p2-KSK" secondAttribute="trailing" id="n7t-2n-RRt"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="baseline" secondItem="FhJ-ab-QbK" secondAttribute="firstBaseline" id="nnt-QV-ced"/>
+                <constraint firstItem="gcf-yF-gWh" firstAttribute="top" secondItem="FhJ-ab-QbK" secondAttribute="top" id="qy0-2K-dQD"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="leading" secondItem="S5d-6c-jIF" secondAttribute="leading" id="rPv-HU-z1U"/>
+                <constraint firstItem="aiZ-2S-QwG" firstAttribute="top" secondItem="C9y-yM-9n5" secondAttribute="top" id="t3H-QV-gIw"/>
                 <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="firstBaseline" secondItem="gYc-p2-KSK" secondAttribute="baseline" id="yFi-i1-4eJ"/>
+                <constraint firstItem="boz-p9-QAx" firstAttribute="top" secondItem="S5d-6c-jIF" secondAttribute="top" id="yfA-6a-OAZ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="489.5" y="525"/>
         </view>
     </objects>
 </document>
